@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 300ms;
+}
+body{
+  font-family: "PT Sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "PT Serif", serif;
+}
+.lili{
+  background: url("https://i.pinimg.com/originals/4a/94/27/4a9427af70ee7c341ba08aa488173f22.jpg") no-repeat;
+  background-position:center;
+  background-size: cover;
+}
