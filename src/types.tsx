@@ -15,3 +15,11 @@ export interface Student {
   score: number;
   courses: Course[];
 }
+export interface StudentExtended {
+  count: number;
+  _id: string;
+  firstName: string;
+  lastName: string;
+  score: number;
+  courses: Course[];
+}

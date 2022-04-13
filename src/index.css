@@ -16,3 +16,21 @@ h1,h2,h3,h4,h5,h6{
   background-position:center;
   background-size: cover;
 }
+
+/* Chrome, Safari, Edge, Opera */
+input.no-appearance::-webkit-outer-spin-button,
+input.no-appearance::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input.no-appearance[type=number] {
+  -moz-appearance: textfield;
+}
+
+.no-break{
+  -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+  break-inside: avoid; /* IE 10+ */
+  page-break-inside: avoid; /* Firefox */
+}

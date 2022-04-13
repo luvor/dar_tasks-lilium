@@ -17,8 +17,9 @@ const HomePage = (props: Props) => {
     faculties.data?.forEach((i: Faculty) => {
       let count = 0;
       students.data.forEach((j: Student) => {
+        //   переписать на reduce
         j.courses.forEach((k: Course) => {
-          if (k === i) {
+          if (k.name === i.name) {
             count += 1;
           }
         });
@@ -32,12 +33,15 @@ const HomePage = (props: Props) => {
   const searchStudents = (student_name: string) => {
     const res = students?.filter(
       (i) =>
-        i.firstName.includes(student_name) || i.lastName.includes(student_name)
+        i.firstName.toLowerCase().includes(student_name.toLowerCase()) ||
+        i.lastName.toLowerCase().includes(student_name.toLowerCase())
     );
     setFilter(res);
   };
   const filterByFaculty = (faculty: string) => {
-    const res = students?.filter((i) => i.courses.includes({ name: faculty }));
+    const res = students?.filter((i) =>
+      i.courses.find((i) => i.name === faculty)
+    );
     setFilter(res);
   };
   useEffect(() => {
@@ -97,7 +101,7 @@ const HomePage = (props: Props) => {
           );
         })}
       </div>
-      <div className="flex flex-wrap min-h-50vh items-start">
+      <div className="lg:columns-3 md:columns-2 sm:columns-1 no-break min-h-50vh py-2">
         {filter?.map((student) => {
           return <StudentCard key={student._id} student={student} />;
         })}
