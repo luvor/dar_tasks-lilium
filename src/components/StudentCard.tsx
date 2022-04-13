@@ -7,7 +7,7 @@ type Props = {
 
 const StudentCard: React.FC<Props> = ({ student }) => {
   return (
-    <div className="no-break w-full flex flex-col column pa-2 ma-1 my-4 rounded-md border-1 border-violet-300">
+    <div className="no-break md:w-full flex flex-col column pa-2 ma-1 my-4 rounded-md border-1 border-violet-300">
       <p className="pb-1 border-0 border-b-1 border-violet-300">
         {student.firstName} {student.lastName}
       </p>

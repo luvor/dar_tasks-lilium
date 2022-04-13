@@ -49,14 +49,16 @@ const HomePage = (props: Props) => {
   }, []);
 
   return (
-    <div className="pa-8">
-      <h1 className="font-bold">💐 Lilium - online school</h1>
-      <input
-        type="text"
-        className="border-1 border-violet-100 rounded-md bg-violet-50 px-4 py-2 ma-1 text-lg text-violet-500 w-100%"
-        placeholder="search..."
-        onChange={(e) => searchStudents(e.target.value)}
-      />
+    <div>
+      <div className="pa-1">
+        <h1 className="font-bold">💐 Lilium - online school</h1>
+        <input
+          type="text"
+          className="w-full border-1 border-violet-100 rounded-md bg-violet-50 px-4 py-2 text-lg text-violet-500"
+          placeholder="search..."
+          onChange={(e) => searchStudents(e.target.value)}
+        />
+      </div>
       <div className="flex flex-wrap">
         {active ? (
           <>

@@ -5,7 +5,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <nav className="flex flex-wrap pa-2">
+    <nav className="flex flex-col flex-wrap pa-1 md:pa-8 md:flex-row">
       <Link className="nav_link" to="/">
         <svg width="2em" height="2em" viewBox="0 0 24 24">
           <path
@@ -14,7 +14,7 @@ const Navbar = (props: Props) => {
           ></path>
         </svg>
       </Link>
-      <Link className="nav_link ml-auto" to="/students">
+      <Link className="nav_link md:ml-auto" to="/students">
         <svg width="1em" height="1em" viewBox="0 0 24 24">
           <path
             fill="currentColor"

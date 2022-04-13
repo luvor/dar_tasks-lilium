@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getStudents } from "../services/students";
 import { Student } from "../types";
-import StudentListCard from "./StudentListCard";
+import StudentListCard from "../components/StudentListCard";
 
 type Props = {};
 
@@ -14,7 +14,7 @@ const StudentList = (props: Props) => {
     "min-w-60 pa-2 mx-1 border-1 text-white bg-violet-400 border-violet-300 rounded-md";
 
   return (
-    <div className="pa-4">
+    <div>
       <h2 className="text-center">StudentList</h2>
       <div className="overflow-x-auto pb-4">
         <div className="flex my-2 text-center">
