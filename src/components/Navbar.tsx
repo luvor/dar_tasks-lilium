@@ -5,7 +5,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <nav className="flex flex-col flex-wrap pa-1 md:pa-8 md:flex-row">
+    <nav className="flex flex-col flex-wrap items-center pa-1 md:pa-8 md:flex-row text-violet-600">
       <Link className="nav_link" to="/">
         <svg width="2em" height="2em" viewBox="0 0 24 24">
           <path
@@ -18,7 +18,7 @@ const Navbar = (props: Props) => {
         <svg width="1em" height="1em" viewBox="0 0 24 24">
           <path
             fill="currentColor"
-            d="M5 5v14h2v2H3V3h4v2H5m15 2H7v2h13V7m0 4H7v2h13v-2m0 4H7v2h13v-2Z"
+            d="M2 14h6v6H2M16 8h-6v2h6M2 10h6V4H2m8 0v2h12V4M10 20h6v-2h-6m0-2h12v-2H10"
           ></path>
         </svg>
         see&nbsp;all&nbsp;students
@@ -31,6 +31,16 @@ const Navbar = (props: Props) => {
           ></path>
         </svg>
         add&nbsp;student
+      </Link>
+      ✦
+      <Link className="nav_link" to="/faculties">
+        <svg width="1em" height="1em" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M5 5v14h2v2H3V3h4v2H5m15 2H7v2h13V7m0 4H7v2h13v-2m0 4H7v2h13v-2Z"
+          ></path>
+        </svg>
+        see&nbsp;all&nbsp;faculties
       </Link>
       <Link className="nav_link" to="/faculties/create">
         <svg width="1em" height="1em" viewBox="0 0 24 24">

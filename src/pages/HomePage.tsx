@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { api } from "../api";
-import StudentCard from "../components/StudentCard";
+import { api } from "../services/api";
+import StudentCard from "../components/student/StudentCard";
 import { Course, Faculty, Student } from "../types";
 
 type Props = {};

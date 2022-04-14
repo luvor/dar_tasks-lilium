@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { getStudents } from "../services/students";
-import { Student } from "../types";
-import StudentListCard from "../components/StudentListCard";
+import { getStudents } from "../../services/students";
+import { Student } from "../../types";
+import StudentListCard from "../../components/student/StudentListCard";
 
 type Props = {};
 
@@ -25,6 +25,7 @@ const StudentList = (props: Props) => {
           <div className={th}>Name</div>
           <div className={th}>Score</div>
           <div className={th}>Courses</div>
+          <div className={th}>Actions</div>
         </div>
         <div>
           {students?.map((student, index) => (

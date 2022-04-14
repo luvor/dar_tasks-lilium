@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getStudent } from "../services/students";
-import { Student } from "../types";
+import { getStudent } from "../../services/students";
+import { Student } from "../../types";
 
 type Props = {};
 

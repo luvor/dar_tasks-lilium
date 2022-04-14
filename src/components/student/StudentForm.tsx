@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Student } from "../types";
+import { Student } from "../../types";
 
 type Props = {
   initialValues?: Partial<Student>;
@@ -43,7 +43,6 @@ const StudentForm: React.FC<Props> = ({ initialValues, handleSubmit }) => {
 
   return (
     <div className="pa-2">
-      <h1 className="text-center">Create student</h1>
       <form
         className="max-w-fit"
         onSubmit={(e) => {
